@@ -1,0 +1,15 @@
+// ==========================================================================
+// Global Base Settings override
+// ==========================================================================
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url('../images/bg.jpg') center center no-repeat;
+	background-size: cover;
+	// overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}

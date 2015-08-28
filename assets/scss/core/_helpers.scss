@@ -1,0 +1,28 @@
+// ==========================================================================
+// Helper Classes
+// ==========================================================================
+
+.text-hide{
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.no-padding{
+  padding:0 !important;
+}
+
+.no-margin{
+  margin:0 !important;
+}
+
+// Container Colors
+.white {
+	background-color: #fff;
+
+	&.container-fluid {
+		padding: em(50);
+	}
+}

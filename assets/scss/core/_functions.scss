@@ -1,0 +1,20 @@
+// ==========================================================================
+// Functions
+// ==========================================================================
+
+// Import if Google Fonts URL is defined
+
+@if variable-exists(font-url--cabin){
+  @import url($font-url--cabin);
+}
+
+@if variable-exists(font-url--gentium){
+  @import url($font-url--gentium);
+}
+
+//call color palette modifiers
+//map-get(map-get($palettes, grey), x-dark);
+//https://www.codefellows.org/blog/so-you-want-to-play-with-list-maps
+@function palette($palette, $shade: 'base'){
+  @return map-get(map-get($palettes, $palette), $shade);
+}

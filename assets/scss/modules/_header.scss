@@ -1,0 +1,24 @@
+header {
+	background-color: $white;
+	border-bottom: 5px solid $orange;
+	
+	// Link Styles
+	a {
+		color: $blue-3;
+		text-transform: uppercase;
+		
+		&:hover, &.active,
+		&:focus {
+			color: $blue-3;
+			text-decoration: none;
+			font-weight: bold;
+		}
+	}
+	
+	// Logo Styles
+	.logo {
+		padding: 40px 0;
+		margin: 0 auto;
+		display: block;
+	}
+}
