@@ -5869,7 +5869,7 @@ html, body {
 }
 
 body {
-  background: url("../images/bg.jpg") center center no-repeat;
+  background: url("../images/bg_1.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
   min-height: 100%;
@@ -5877,6 +5877,10 @@ body {
 
 .container {
   max-width: 900px;
+}
+
+.tagline {
+  padding: 2em;
 }
 
 .text-hide {
@@ -5903,7 +5907,7 @@ body {
 }
 
 .headline {
-  font-size: 3.5714286em;
+  font-size: 1.4285714em;
   color: #355065;
 }
 
@@ -5911,12 +5915,16 @@ body {
   color: #f7971e;
 }
 
+.txt-white {
+  color: #ffffff;
+}
+
 .txt-lg {
   font-size: 4vw;
 }
 
 .txt-md {
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 
 .txt-sm {
@@ -5941,10 +5949,12 @@ header .logo {
   margin: 0 auto;
   display: block;
 }
+header ul li a {
+  padding: 0 20px;
+}
 
 footer {
   color: #ffffff;
-  background-color: #004a61;
   padding: 1.4285714em;
   margin-top: 100px;
   position: absolute;
@@ -5959,4 +5969,7 @@ footer a {
 }
 footer a:hover {
   color: #f7971e;
+}
+footer ul li a {
+  padding: 0 25%;
 }

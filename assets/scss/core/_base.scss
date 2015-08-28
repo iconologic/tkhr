@@ -7,13 +7,16 @@ html, body {
 }
 
 body {
-	background: url('../images/bg.jpg') center center no-repeat;
+	background: url('../images/bg_1.jpg') center center no-repeat;
 	background-size: cover;
-	// overflow: hidden;
 	position: relative;
 	min-height: 100%;
 }
 
 .container {
 	max-width: 900px;
+}
+
+.tagline {
+	padding: 2em;
 }
