@@ -5875,6 +5875,10 @@ body {
   min-height: 100%;
 }
 
+.container {
+  max-width: 900px;
+}
+
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -5899,8 +5903,24 @@ body {
 }
 
 .headline {
-  font-size: 1.4285714em;
+  font-size: 3.5714286em;
   color: #355065;
+}
+
+.txt-orange {
+  color: #f7971e;
+}
+
+.txt-lg {
+  font-size: 4vw;
+}
+
+.txt-md {
+  font-size: 2.5vw;
+}
+
+.txt-sm {
+  font-size: 1.5vw;
 }
 
 header {

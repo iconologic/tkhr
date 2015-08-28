@@ -1,4 +1,20 @@
 .headline {
-	font-size: em(20);
+	font-size: em(50);
 	color: $text;
+}
+
+.txt-orange {
+	color: $orange;
+}
+
+.txt-lg {
+	font-size: 4vw;
+}
+
+.txt-md {
+	font-size: 2.5vw;
+}
+
+.txt-sm {
+	font-size: 1.5vw;
 }
