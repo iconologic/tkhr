@@ -1,33 +1,36 @@
 .team-grid {
 	color: $white;
+	clear: both;
 
 	.grid-item {
 		padding: 2.5px;
-	}
+		height: 218px;
 
-	.team-category,
-	.team-partner, .team-associate,
-	.team-counsel, .team-patent {
-		p { margin: 0; }
+		.team-partner {
+			
+			// Overlay
+			.team-overlay {
+				background-color: $blue-4;
+				height: 100%;
+				width: 100%;
+				z-index: 1;
+				padding: 2.5px;
+			}
+
+			.team-name {
+				z-index: 2;
+			}
+
+			// Image
+			.team-image, .team-name, .team-overlay {
+				float: left;
+				position: absolute;
+			}
+		}
 	}
 
 	.team-category {
 		background-color: $orange;
-	}
-
-	.team-partner {
-		background-color: $blue-4;
-	}
-
-	.team-associate {
-		background-color: $blue-3;
-	}
-
-	.team-counsel {
-		background-color: $blue-2;
-	}
-
-	.team-patent {
-		background-color: $blue-1;
+		height: 218px;
 	}
 }

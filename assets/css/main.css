@@ -5956,29 +5956,29 @@ header ul li a {
 
 .team-grid {
   color: #ffffff;
+  clear: both;
 }
 .team-grid .grid-item {
   padding: 2.5px;
+  height: 218px;
 }
-.team-grid .team-category p,
-.team-grid .team-partner p, .team-grid .team-associate p,
-.team-grid .team-counsel p, .team-grid .team-patent p {
-  margin: 0;
+.team-grid .grid-item .team-partner .team-overlay {
+  background-color: #009ac6;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  padding: 2.5px;
+}
+.team-grid .grid-item .team-partner .team-name {
+  z-index: 2;
+}
+.team-grid .grid-item .team-partner .team-image, .team-grid .grid-item .team-partner .team-name, .team-grid .grid-item .team-partner .team-overlay {
+  float: left;
+  position: absolute;
 }
 .team-grid .team-category {
   background-color: #f7971e;
-}
-.team-grid .team-partner {
-  background-color: #009ac6;
-}
-.team-grid .team-associate {
-  background-color: #33afd3;
-}
-.team-grid .team-counsel {
-  background-color: #65c3dd;
-}
-.team-grid .team-patent {
-  background-color: #8bd2e6;
+  height: 218px;
 }
 
 .footer-category {
