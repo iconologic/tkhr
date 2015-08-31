@@ -22,9 +22,6 @@
         "relativePaths": true
     },
     "customRuby": false,
-    // "ignoreDir": [
-    //     "/assets/bower_components"
-    // ],
     "customRubyPath": "/Ruby21-x/lib/ruby/gems/2.1.0",
     "autoPrefixer": null,
     "useCompass": true,
