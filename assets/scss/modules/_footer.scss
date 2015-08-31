@@ -1,13 +1,73 @@
+.footer-category {
+	background-color:rgba(0, 0, 0, 0.5);
+	color: $white;
+
+	.nav-bar {
+		border-top: 1px solid $white;
+		padding: 0;
+		margin: 0 auto;
+
+		.navbar-text {
+			position: absolute;
+			left: 75px;
+		}
+
+		li a { 
+		  background-image:url('../images/sprites.png');
+		  display:block;
+		  height: 55px;
+		  margin: 10px 25px;
+		}
+	}
+
+	//Industries Menu Items
+	.nav-button-electrical a{
+		background-position: 0 175px;
+		width: 155px;
+	}
+	 
+	.nav-button-biotech a{
+		background-position: -175px -70px;
+		width: 160px;
+	}
+	 
+	.nav-button-mechanical a{
+		background-position: -350px -70px;
+		width: 160px;
+	}
+	 
+	.nav-button-chemistry a{
+		background-position: -525px -70px;
+		width: 130px;
+	}
+
+	//Practice Menu Items
+	.nav-button-copyright a{
+		background-position: 0 60px;
+		width: 155px;
+	}
+	 
+	.nav-button-patent a{
+		background-position: -170px 60px;
+		width: 160px;
+	}
+	 
+	.nav-button-trademark a{
+		background-position: -350px 60px;
+		width: 160px;
+	}
+	 
+	.nav-button-litigation a{
+		background-position: -525px 60px;
+		width: 130px;
+	}
+}
+
 footer {
 	color: $white;
 	padding: em(20);
-	margin-top: 100px;
+	background-color: $slate-gray;
 
-	// Sticky Footer
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
 
 	a {
 		color: $white;
@@ -20,6 +80,6 @@ footer {
 	}
 
 	ul li a{
-		padding: 0 25%;
+		padding: 0 em(25);
 	}
 }
