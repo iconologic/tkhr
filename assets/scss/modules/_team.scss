@@ -1,0 +1,33 @@
+.team-grid {
+	color: $white;
+
+	.grid-item {
+		padding: 2.5px;
+	}
+
+	.team-category,
+	.team-partner, .team-associate,
+	.team-counsel, .team-patent {
+		p { margin: 0; }
+	}
+
+	.team-category {
+		background-color: $orange;
+	}
+
+	.team-partner {
+		background-color: $blue-4;
+	}
+
+	.team-associate {
+		background-color: $blue-3;
+	}
+
+	.team-counsel {
+		background-color: $blue-2;
+	}
+
+	.team-patent {
+		background-color: $blue-1;
+	}
+}

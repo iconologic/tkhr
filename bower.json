@@ -1,0 +1,19 @@
+{
+  "name": "tkhr",
+  "version": "0.0.0",
+  "description": "tkhr rebuild 2015",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "shufflejs": "~3.1.1"
+  }
+}

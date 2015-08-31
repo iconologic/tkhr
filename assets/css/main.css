@@ -5902,7 +5902,7 @@ body {
   background-color: #fff;
 }
 .white.container-fluid {
-  padding: 3.5714286em;
+  padding: 1.7857143em;
 }
 
 .headline {
@@ -5950,6 +5950,33 @@ header .logo {
 }
 header ul li a {
   padding: 0 20px;
+}
+
+.team-grid {
+  color: #ffffff;
+}
+.team-grid .grid-item {
+  padding: 2.5px;
+}
+.team-grid .team-category p,
+.team-grid .team-partner p, .team-grid .team-associate p,
+.team-grid .team-counsel p, .team-grid .team-patent p {
+  margin: 0;
+}
+.team-grid .team-category {
+  background-color: #f7971e;
+}
+.team-grid .team-partner {
+  background-color: #009ac6;
+}
+.team-grid .team-associate {
+  background-color: #33afd3;
+}
+.team-grid .team-counsel {
+  background-color: #65c3dd;
+}
+.team-grid .team-patent {
+  background-color: #8bd2e6;
 }
 
 footer {
