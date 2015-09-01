@@ -13,15 +13,20 @@ $(document).ready(function() {
 
 
 	// Team Grid Hover
-		$('.team-overlay').css('opacity', 1);  
-		// when hover over the selected image change the opacity to 1  
-		$('.team-overlay').hover(  
-		   function(){  
-		      $(this).fadeTo('fast', 0.4);  
-		   },  
-		   function(){  
-		      $(this).fadeTo('fast', 1);  
-		   });  
-		  
+	var transparent = {'background-color': 'rgba(255,255,255,0)'};
+	var bgColor;
+
+	function hoverIn(){
+		bgColor = $(this).css('background-color');
+	  $(this).css(transparent);
+	}
+
+	function hoverOut(){
+	  $(this).css('background-color', bgColor); 
+	}
+
+	// Hover Effect for Team Grid
+	$('.team-partner, .team-associate, .team-counsel, .team-patent').hover(hoverIn, hoverOut);
+	  
 
 });

@@ -4,33 +4,58 @@
 
 	.grid-item {
 		padding: 2.5px;
-		height: 218px;
-
-		.team-partner {
-			
-			// Overlay
-			.team-overlay {
-				background-color: $blue-4;
-				height: 100%;
-				width: 100%;
-				z-index: 1;
-				padding: 2.5px;
-			}
+		height: 212px;
+		
+		// Overlay
+		.team-partner, .team-associate,
+		.team-counsel, .team-patent {
+			height: 100%; 
+			z-index: 1;
+			// -webkit-transition: all 0.4s ease-in-out;
+			// -moz-transition: all 0.4s ease-in-out;
+			// -ms-transition: all 0.4s ease-in-out;
+			// -o-transition: all 0.4s ease-in-out;
+			// transition: all 0.4s ease-in-out;
 
 			.team-name {
 				z-index: 2;
+				position: absolute;
 			}
 
 			// Image
-			.team-image, .team-name, .team-overlay {
-				float: left;
-				position: absolute;
+			.team-image {
+				position: relative;
+				z-index: -1;
+				top: 0;
 			}
 		}
 	}
 
+	// Color Styles
+	
+	.team-partner {
+		background-color: $blue-4;
+	}
+
+	.team-associate {
+		background-color: $blue-3;
+	}
+
+	.team-counsel {
+		background-color: $blue-2;
+	}
+
+	.team-patent {
+		background-color: $blue-1;
+	}
+
 	.team-category {
 		background-color: $orange;
-		height: 218px;
+		height: 207px;
+	}
+
+	.team-category p, .team-name {
+		font-size: em(18);
+		padding: 5px 10px;
 	}
 }
