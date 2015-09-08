@@ -7,9 +7,13 @@
 
 	<!-- Nav -->
 	<ul class="list-inline">
-		<li><a href="#">Services</a></li>
+		<li><a href="/services/index"
+			{% if mixture.url == "services/index" %}class="active"{% endif %}>Services</a>
+		</li>
 		<li><a href="#">Practice Areas</a></li>
-		<li><a href="/people/index" class="active">People</a></li>
+		<li><a href="/people/index" 
+			{% if mixture.url == "people/index" %}class="active"{% endif %}>People</a>
+		</li>
 		<li><a href="#">Careers</a></li>
 		<li><a href="#">Connect</a></li>
 	</ul>

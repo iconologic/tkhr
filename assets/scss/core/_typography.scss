@@ -2,22 +2,46 @@
 	font-size: em(20);
 	color: $text;
 }
-.txt-orange {
-	color: $orange;
+
+.h1 {
+	color: $blue-4;
+	font-size: em(43);
 }
-.txt-white{
-	color: $white;
+
+.h2 {
+	font-size: em(35);
 }
+
 .txt-lg {
-	font-size: 4vw;
+	font-size: em(60);
 }
 
 .txt-md {
-	font-size: 3vw;
+	font-size: em(50);
 }
 
 .txt-sm {
 	font-size: 1.5vw;
+}
+
+// Font Styles
+.txt-italic { font-style: italic; }
+.txt-bold { font-weight: bold; }
+
+// Font Color 
+.blue-1 { color: $blue-1; }
+.blue-2 { color: $blue-2; }
+.blue-3 { color: $blue-3; }
+.blue-4 { color: $blue-4; }
+
+.txt-orange {	color: $orange; }
+.txt-white{	color: $white; }
+
+// Section Title
+.section-title {
+	text-transform: uppercase;
+	padding: 5px;
+	border-bottom: 1px solid $text;
 }
 
 //some comments

@@ -63,6 +63,64 @@
 		background-position: -525px 60px;
 		width: 130px;
 	}
+
+
+	// Dark Themed Footer
+	&.dark {
+		background-color: $white;
+		color: $text;
+
+		.nav-bar {
+			border-top: 1px solid $text;
+		}
+
+		.navbar-text {
+			margin: 0;
+		}
+
+		//Industries Nav Menu Items
+		.nav-button-electrical a{
+			background-position: 0 240px;
+			width: 155px;
+		}
+		 
+		.nav-button-biotech a{
+			background-position: -175px -9px;
+			width: 160px;
+		}
+		
+		.nav-button-mechanical a{
+			background-position: -350px -9px;
+			width: 160px;
+		}
+		 
+		.nav-button-chemistry a{
+			background-position: -525px -9px;
+			width: 130px;
+		}
+
+		//Practice Menu Items
+		.nav-button-copyright a{
+			background-position: 0 120px;
+			width: 155px;
+		}
+		 
+		.nav-button-patent a{
+			background-position: -170px 120px;
+			width: 160px;
+		}
+		 
+		.nav-button-trademark a{
+			background-position: -350px 120px;
+			width: 160px;
+		}
+		 
+		.nav-button-litigation a{
+			background-position: -525px 120px;
+			width: 130px;
+		}
+	}
+
 }
 
 footer {

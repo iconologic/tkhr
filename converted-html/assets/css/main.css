@@ -5960,45 +5960,61 @@ header ul li a {
 }
 .team-grid .grid-item {
   padding: 2.5px;
-  height: 218px;
+  height: 212px;
 }
-.team-grid .grid-item .team-partner .team-overlay {
-  background-color: #009ac6;
+.team-grid .grid-item .team-partner, .team-grid .grid-item .team-associate,
+.team-grid .grid-item .team-counsel, .team-grid .grid-item .team-patent {
   height: 100%;
-  width: 100%;
   z-index: 1;
-  padding: 2.5px;
 }
-.team-grid .grid-item .team-partner .team-name {
+.team-grid .grid-item .team-partner .team-name, .team-grid .grid-item .team-associate .team-name,
+.team-grid .grid-item .team-counsel .team-name, .team-grid .grid-item .team-patent .team-name {
   z-index: 2;
-}
-.team-grid .grid-item .team-partner .team-image, .team-grid .grid-item .team-partner .team-name, .team-grid .grid-item .team-partner .team-overlay {
-  float: left;
   position: absolute;
+}
+.team-grid .grid-item .team-partner .team-image, .team-grid .grid-item .team-associate .team-image,
+.team-grid .grid-item .team-counsel .team-image, .team-grid .grid-item .team-patent .team-image {
+  position: relative;
+  z-index: -1;
+  top: 0;
+}
+.team-grid .team-partner {
+  background-color: #009ac6;
+}
+.team-grid .team-associate {
+  background-color: #33afd3;
+}
+.team-grid .team-counsel {
+  background-color: #65c3dd;
+}
+.team-grid .team-patent {
+  background-color: #8bd2e6;
 }
 .team-grid .team-category {
   background-color: #f7971e;
-  height: 218px;
+  height: 207px;
+}
+.team-grid .team-category p, .team-grid .team-name {
+  font-size: 1.2857143em;
+  padding: 5px 10px;
 }
 
 .footer-category {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .footer-category .nav-bar {
   border-top: 1px solid #ffffff;
   padding: 0;
   margin: 0 auto;
 }
-.footer-category .nav-bar .navbar-text {
-  position: absolute;
-  left: 75px;
-}
 .footer-category .nav-bar li a {
   background-image: url("../images/sprites.png");
   display: block;
   height: 55px;
-  margin: 10px 25px;
+  margin: 10px;
 }
 .footer-category .nav-button-electrical a {
   background-position: 0 175px;
