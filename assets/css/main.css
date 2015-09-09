@@ -6081,7 +6081,8 @@ h2.resp-tab-title:last-child {
   background-color: #00283a;
   float: left;
   width: 60%;
-  min-height: 318px;
+  overflow-y: auto;
+  height: 318px;
   clear: none;
 }
 
