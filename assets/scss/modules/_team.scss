@@ -1,10 +1,11 @@
 .team-grid {
 	color: $white;
 	clear: both;
+	padding: 20px 0;
 
 	.grid-item {
 		padding: 2.5px;
-		height: 212px;
+		width: auto;
 		
 		// Overlay
 		.team-partner, .team-associate,
@@ -27,6 +28,8 @@
 				position: relative;
 				z-index: -1;
 				top: 0;
+				width: 100%;
+				height: auto;
 			}
 		}
 	}

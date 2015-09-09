@@ -6209,10 +6209,11 @@ header ul li a {
 .team-grid {
   color: #ffffff;
   clear: both;
+  padding: 20px 0;
 }
 .team-grid .grid-item {
   padding: 2.5px;
-  height: 212px;
+  width: auto;
 }
 .team-grid .grid-item .team-partner, .team-grid .grid-item .team-associate,
 .team-grid .grid-item .team-counsel, .team-grid .grid-item .team-patent {
@@ -6229,6 +6230,8 @@ header ul li a {
   position: relative;
   z-index: -1;
   top: 0;
+  width: 100%;
+  height: auto;
 }
 .team-grid .team-partner {
   background-color: #009ac6;

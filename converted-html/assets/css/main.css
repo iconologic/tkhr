@@ -5884,6 +5884,10 @@ body {
   padding: 2em;
 }
 
+#intro, #services {
+  margin-bottom: 30px;
+}
+
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -5912,6 +5916,51 @@ body {
   color: #355065;
 }
 
+.h1 {
+  color: #009ac6;
+  font-size: 3.0714286em;
+}
+
+.h2 {
+  font-size: 2.5em;
+}
+
+.txt-lg {
+  font-size: 4.2857143em;
+}
+
+.txt-md {
+  font-size: 3.5714286em;
+}
+
+.txt-sm {
+  font-size: 1.5vw;
+}
+
+.txt-italic {
+  font-style: italic;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.blue-1 {
+  color: #8bd2e6;
+}
+
+.blue-2 {
+  color: #65c3dd;
+}
+
+.blue-3 {
+  color: #33afd3;
+}
+
+.blue-4 {
+  color: #009ac6;
+}
+
 .txt-orange {
   color: #f7971e;
 }
@@ -5920,18 +5969,221 @@ body {
   color: #ffffff;
 }
 
-.txt-lg {
-  font-size: 4vw;
+.section-title {
+  text-transform: uppercase;
+  padding: 5px;
+  border-bottom: 1px solid #355065;
 }
 
-.txt-md {
-  font-size: 3vw;
+ul.resp-tabs-list, p {
+  margin: 0px;
+  padding: 0px;
 }
 
-.txt-sm {
-  font-size: 1.5vw;
+.resp-tabs-list li {
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+  padding: 13px 15px;
+  margin: 0 4px 0 0;
+  list-style: none;
+  cursor: pointer;
+  float: left;
 }
 
+ul.resp-tabs-list.hor_1 {
+  padding-bottom: 20px;
+}
+
+.resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  clear: left;
+}
+
+h2.resp-accordion {
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+}
+
+.resp-tab-content {
+  display: none;
+  padding: 15px;
+}
+
+.resp-tab-active {
+  border: 1px solid #5AB1D0 !important;
+  border-bottom: none;
+  margin-bottom: -1px !important;
+  padding: 12px 14px 14px 14px !important;
+  border-top: 4px solid #5AB1D0 !important;
+  border-bottom: 0px #fff solid !important;
+}
+
+.resp-tab-active {
+  border-bottom: none;
+  background-color: #fff;
+}
+
+.resp-content-active, .resp-accordion-active {
+  display: block;
+}
+
+.resp-tab-content {
+  border: 1px solid #c1c1c1;
+  border-top-color: #5AB1D0;
+}
+
+h2.resp-accordion {
+  font-size: 13px;
+  border: 1px solid #c1c1c1;
+  border-top: 0px solid #c1c1c1;
+  margin: 0px;
+  padding: 10px 15px;
+}
+
+h2.resp-tab-active {
+  border-bottom: 0px solid #c1c1c1 !important;
+  margin-bottom: 0px !important;
+  padding: 10px 15px !important;
+}
+
+h2.resp-tab-title:last-child {
+  border-bottom: 12px solid #c1c1c1 !important;
+  background: blue;
+}
+
+/*-----------Vertical tabs-----------*/
+.resp-vtabs ul.resp-tabs-list {
+  float: left;
+  width: 40%;
+  background-color: #004a61;
+  color: #ffffff;
+}
+.resp-vtabs ul.resp-tabs-list h3 {
+  font-size: 1.4285714em;
+  padding: 15px;
+}
+
+.resp-vtabs .resp-tabs-list li {
+  display: block;
+  padding: 5px 15px !important;
+  margin: 0 0 4px;
+  cursor: pointer;
+  float: none;
+}
+
+.resp-vtabs .resp-tabs-container {
+  padding: 0px;
+  color: #ffffff;
+  margin-top: 3px;
+  background-color: #00283a;
+  float: left;
+  width: 60%;
+  overflow-y: auto;
+  height: 318px;
+  clear: none;
+}
+
+.resp-vtabs .resp-tab-content {
+  border: none;
+  word-wrap: break-word;
+}
+
+.resp-vtabs li.resp-tab-active {
+  position: relative;
+  z-index: 1;
+  margin-right: -1px !important;
+  padding: 5px 15px !important;
+  border-top: 1px solid;
+  border: 1px solid #00283a !important;
+  background-color: #00283a !important;
+  margin-bottom: 4px !important;
+  color: #f7971e;
+  font-style: italic;
+}
+
+.resp-arrow {
+  width: 0;
+  height: 0;
+  float: right;
+  margin-top: 3px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 12px solid #c1c1c1;
+}
+
+h2.resp-tab-active span.resp-arrow {
+  border: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #9B9797;
+}
+
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+  background: #DBDBDB;
+  /* !important;*/
+}
+
+.resp-easy-accordion h2.resp-accordion {
+  display: block;
+}
+
+.resp-easy-accordion .resp-tab-content {
+  border: 1px solid #c1c1c1;
+}
+
+.resp-easy-accordion .resp-tab-content:last-child {
+  border-bottom: 1px solid #c1c1c1;
+  /* !important;*/
+}
+
+.resp-jfit {
+  width: 100%;
+  margin: 0px;
+}
+
+.resp-tab-content-active {
+  display: block;
+}
+
+h2.resp-accordion:first-child {
+  border-top: 1px solid #c1c1c1;
+  /* !important;*/
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+  ul.resp-tabs-list {
+    display: none;
+  }
+
+  h2.resp-accordion {
+    display: block;
+  }
+
+  .resp-vtabs .resp-tab-content {
+    border: 1px solid #C1C1C1;
+  }
+
+  .resp-vtabs .resp-tabs-container {
+    border: none;
+    float: none;
+    width: 100%;
+    min-height: 100px;
+    clear: none;
+  }
+
+  .resp-accordion-closed {
+    display: none !important;
+  }
+
+  .resp-vtabs .resp-tab-content:last-child {
+    border-bottom: 1px solid #c1c1c1 !important;
+  }
+}
 header {
   background-color: #ffffff;
   border-bottom: 5px solid #f7971e;
@@ -5957,10 +6209,11 @@ header ul li a {
 .team-grid {
   color: #ffffff;
   clear: both;
+  padding: 20px 0;
 }
 .team-grid .grid-item {
   padding: 2.5px;
-  height: 212px;
+  width: auto;
 }
 .team-grid .grid-item .team-partner, .team-grid .grid-item .team-associate,
 .team-grid .grid-item .team-counsel, .team-grid .grid-item .team-patent {
@@ -5977,6 +6230,8 @@ header ul li a {
   position: relative;
   z-index: -1;
   top: 0;
+  width: 100%;
+  height: auto;
 }
 .team-grid .team-partner {
   background-color: #009ac6;
@@ -6046,6 +6301,48 @@ header ul li a {
 }
 .footer-category .nav-button-litigation a {
   background-position: -525px 60px;
+  width: 130px;
+}
+.footer-category.dark {
+  background-color: #ffffff;
+  color: #355065;
+}
+.footer-category.dark .nav-bar {
+  border-top: 1px solid #355065;
+}
+.footer-category.dark .navbar-text {
+  margin: 0;
+}
+.footer-category.dark .nav-button-electrical a {
+  background-position: 0 240px;
+  width: 155px;
+}
+.footer-category.dark .nav-button-biotech a {
+  background-position: -175px -9px;
+  width: 160px;
+}
+.footer-category.dark .nav-button-mechanical a {
+  background-position: -350px -9px;
+  width: 160px;
+}
+.footer-category.dark .nav-button-chemistry a {
+  background-position: -525px -9px;
+  width: 130px;
+}
+.footer-category.dark .nav-button-copyright a {
+  background-position: 0 120px;
+  width: 155px;
+}
+.footer-category.dark .nav-button-patent a {
+  background-position: -170px 120px;
+  width: 160px;
+}
+.footer-category.dark .nav-button-trademark a {
+  background-position: -350px 120px;
+  width: 160px;
+}
+.footer-category.dark .nav-button-litigation a {
+  background-position: -525px 120px;
   width: 130px;
 }
 
