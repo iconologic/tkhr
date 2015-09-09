@@ -78,6 +78,7 @@ h2.resp-tab-title:last-child {
 }
 
 /*-----------Vertical tabs-----------*/
+// Left Side
 .resp-vtabs ul.resp-tabs-list {
     float: left;
     width: 40%;
@@ -98,6 +99,7 @@ h2.resp-tab-title:last-child {
     float: none;
 }
 
+// Right Side
 .resp-vtabs .resp-tabs-container {
     padding: 0px;
     color: $white;
