@@ -1,17 +1,23 @@
 .team-grid {
-	color: $white;
 	clear: both;
-	padding: 20px 0;
+	padding: 20px 0;	
+	color: $white;
 
 	.grid-item {
 		padding: 2.5px;
-		width: auto;
+	
+		a {
+			color: $white;
+			&:hover {
+				color: $orange;
+			}
+		}
 		
 		// Overlay
 		.team-partner, .team-associate,
 		.team-counsel, .team-patent {
 			height: 100%; 
-			z-index: 1;
+			z-index: 1;				
 			// -webkit-transition: all 0.4s ease-in-out;
 			// -moz-transition: all 0.4s ease-in-out;
 			// -ms-transition: all 0.4s ease-in-out;
@@ -30,6 +36,7 @@
 				top: 0;
 				width: 100%;
 				height: auto;
+
 			}
 		}
 	}
@@ -60,5 +67,33 @@
 	.team-category p, .team-name {
 		font-size: em(18);
 		padding: 5px 10px;
+	}
+}
+
+
+//People Detail
+.people-detail {
+
+	p {
+		color: #004960;
+	}
+
+	ul {
+		padding: 0;
+
+		li {
+		list-style-type: none;
+	}
+
+	}
+	
+	img.profile-pic {
+		width: 100%;
+		height: auto;
+	}
+
+	img.industries-logo {
+		margin: 0 auto;
+		width: 50%;
 	}
 }

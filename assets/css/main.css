@@ -5888,6 +5888,10 @@ body {
   margin-bottom: 30px;
 }
 
+nav li a {
+  background-image: url("../images/sprites.png");
+}
+
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -5967,6 +5971,22 @@ body {
 
 .txt-white {
   color: #ffffff;
+}
+
+.txt-blue-1 {
+  color: #8bd2e6;
+}
+
+.txt-blue-2 {
+  color: #65c3dd;
+}
+
+.txt-blue-3 {
+  color: #33afd3;
+}
+
+.txt-blue-4 {
+  color: #009ac6;
 }
 
 .section-title {
@@ -6207,13 +6227,18 @@ header ul li a {
 }
 
 .team-grid {
-  color: #ffffff;
   clear: both;
   padding: 20px 0;
+  color: #ffffff;
 }
 .team-grid .grid-item {
   padding: 2.5px;
-  width: auto;
+}
+.team-grid .grid-item a {
+  color: #ffffff;
+}
+.team-grid .grid-item a:hover {
+  color: #f7971e;
 }
 .team-grid .grid-item .team-partner, .team-grid .grid-item .team-associate,
 .team-grid .grid-item .team-counsel, .team-grid .grid-item .team-patent {
@@ -6254,6 +6279,24 @@ header ul li a {
   padding: 5px 10px;
 }
 
+.people-detail p {
+  color: #004960;
+}
+.people-detail ul {
+  padding: 0;
+}
+.people-detail ul li {
+  list-style-type: none;
+}
+.people-detail img.profile-pic {
+  width: 100%;
+  height: auto;
+}
+.people-detail img.industries-logo {
+  margin: 0 auto;
+  width: 50%;
+}
+
 .footer-category {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
@@ -6266,7 +6309,6 @@ header ul li a {
   margin: 0 auto;
 }
 .footer-category .nav-bar li a {
-  background-image: url("../images/sprites.png");
   display: block;
   height: 55px;
   margin: 10px;
