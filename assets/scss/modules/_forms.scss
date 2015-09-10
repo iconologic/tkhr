@@ -1,0 +1,40 @@
+label {
+	color: $white;
+	font-weight: 300;
+}
+
+.form-control, .file-btn::before, .submit-btn {
+	padding: 6px 12px;
+	background-color: #009AC7;
+	border: none;
+	border-radius: 0px;
+	color: $white;
+}
+
+.file-btn {
+  visibility: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.file-btn::before {
+  content: 'No File Chosen';
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  visibility: visible;
+  position: absolute;
+  
+  width: 100%;
+  text-align: center;
+}
+
+.submit-btn {
+	width: 100%;
+	background-color: $orange;
+
+	&:hover {
+		color: $white;
+	}
+}

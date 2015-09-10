@@ -1,0 +1,26 @@
+.article {
+    padding: 3px;
+    margin: 2px;
+}
+.article .text {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.article .text.short {        
+    overflow: hidden;
+}
+.article .text.full {
+    display: none;
+}
+.read-more {
+    cursor: pointer;
+    display: inline-block;    
+    color: white;
+    margin: 2px;
+}
+.ellipsis {
+    color: $white;
+    font-weight: bold;
+    font-size: 14px;
+}

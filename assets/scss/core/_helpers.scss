@@ -20,9 +20,65 @@
 
 // Container Colors
 .white {
-	background-color: #fff;
+	background-color: $white;
 
 	&.container-fluid {
 		padding: em(25);
 	}
+}
+
+.dark-blue {
+  background-color: $dark-blue;
+
+  &.container-fluid {
+    padding: em(25);
+  }
+}
+
+.slate-gray {
+  background-color: $slate-gray;
+
+  &.container-fluid {
+    padding: em(25);
+  }
+}
+
+.slate-gray {
+  background-color: $slate-gray;
+
+  &.container-fluid {
+    padding: em(25);
+  }
+}
+
+.blue-1 {
+  background-color: $blue-1;
+
+  &.container-fluid {
+    padding: em(25);
+  }
+}
+
+.blue-2 {
+  background-color: $blue-2;
+
+  &.container-fluid {
+    padding: em(25);
+  }
+}
+
+.blue-3 {
+  background-color: $blue-3;
+
+  &.container-fluid {
+    padding: em(25);
+  }
+}
+
+.blue-4 {
+  background-color: $blue-4;
+
+  &.container-fluid {
+    padding: em(25);
+  }
 }

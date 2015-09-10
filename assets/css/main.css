@@ -5909,9 +5909,58 @@ nav li a {
 }
 
 .white {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .white.container-fluid {
+  padding: 1.7857143em;
+}
+
+.dark-blue {
+  background-color: #00283a;
+}
+.dark-blue.container-fluid {
+  padding: 1.7857143em;
+}
+
+.slate-gray {
+  background-color: #004960;
+}
+.slate-gray.container-fluid {
+  padding: 1.7857143em;
+}
+
+.slate-gray {
+  background-color: #004960;
+}
+.slate-gray.container-fluid {
+  padding: 1.7857143em;
+}
+
+.blue-1 {
+  background-color: #8bd2e6;
+}
+.blue-1.container-fluid {
+  padding: 1.7857143em;
+}
+
+.blue-2 {
+  background-color: #65c3dd;
+}
+.blue-2.container-fluid {
+  padding: 1.7857143em;
+}
+
+.blue-3 {
+  background-color: #33afd3;
+}
+.blue-3.container-fluid {
+  padding: 1.7857143em;
+}
+
+.blue-4 {
+  background-color: #009ac6;
+}
+.blue-4.container-fluid {
   padding: 1.7857143em;
 }
 
@@ -6078,7 +6127,7 @@ h2.resp-tab-title:last-child {
 .resp-vtabs ul.resp-tabs-list {
   float: left;
   width: 40%;
-  background-color: #004a61;
+  background-color: #004960;
   color: #ffffff;
 }
 .resp-vtabs ul.resp-tabs-list h3 {
@@ -6391,7 +6440,7 @@ header ul li a {
 footer {
   color: #ffffff;
   padding: 1.4285714em;
-  background-color: #004a61;
+  background-color: #004960;
 }
 footer a {
   color: #ffffff;
@@ -6403,4 +6452,74 @@ footer a:hover {
 }
 footer ul li a {
   padding: 0 1.7857143em;
+}
+
+label {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.form-control, .file-btn::before, .submit-btn {
+  padding: 6px 12px;
+  background-color: #009AC7;
+  border: none;
+  border-radius: 0px;
+  color: #ffffff;
+}
+
+.file-btn {
+  visibility: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.file-btn::before {
+  content: 'No File Chosen';
+  display: inline-block;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  visibility: visible;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #f7971e;
+}
+.submit-btn:hover {
+  color: #ffffff;
+}
+
+.article {
+  padding: 3px;
+  margin: 2px;
+}
+
+.article .text {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.article .text.short {
+  overflow: hidden;
+}
+
+.article .text.full {
+  display: none;
+}
+
+.read-more {
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  margin: 2px;
+}
+
+.ellipsis {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
 }
