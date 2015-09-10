@@ -43,6 +43,37 @@ $(document).ready(function() {
 
 	// Hover Effect for Team Grid
 	$('.team-partner, .team-associate, .team-counsel, .team-patent').hover(hoverIn, hoverOut)
-	  
 
+	// Job Openings Read More
+
+	var maxChars = 520;
+	var ellipsis = "...";
+	$(".article").each(function() {
+	    var text = $(this).find(".text.full").text();
+	    var html = $(this).find(".text.full").html();        
+	    if(text.length > maxChars)
+	    {            
+	        var shortHtml = html.substring(0, maxChars - 3) + "<span class='ellipsis'>" + ellipsis + "</span>";
+	        $(this).find(".text.short").html(shortHtml);            
+	    }
+	});
+	$(".read-more").click(function(){        
+	    var readMoreText = "more";
+	    var readLessText = "less";        
+	    var $shortElem = $(this).parent().find(".text.short");
+	    var $fullElem = $(this).parent().find(".text.full");        
+	    
+	    if($shortElem.is(":visible"))
+	    {           
+	        $shortElem.hide();
+	        $fullElem.show();
+	        $(this).text(readLessText);
+	    }
+	    else
+	    {
+	        $shortElem.show();
+	        $fullElem.hide();
+	        $(this).text(readMoreText);
+	    }       
+	});
 });
