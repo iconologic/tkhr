@@ -1,26 +1,40 @@
+.container {
+    &.jobs-container {
+        margin-top: em(20);
+        margin-bottom: em(20);
+    }
+}
+
 .article {
     padding: 3px;
     margin: 2px;
-}
-.article .text {
-    font-size: 12px;
-    line-height: 17px;
+
+    .text {
+        font-size: 12px;
+        line-height: 17px;
+        &.short {
+            overflow: hidden;
+    }
+        &.full {
+            display: none;
+        }
+    }
+
+    p.h3 {
+        margin-top: 0;
+    }
 }
 
-.article .text.short {        
-    overflow: hidden;
-}
-.article .text.full {
-    display: none;
-}
 .read-more {
     cursor: pointer;
     display: inline-block;    
-    color: white;
-    margin: 2px;
-}
-.ellipsis {
     color: $white;
+    margin: 2px;
+    float: right;
+}
+
+.ellipsis {
+    color: $blue-5;
     font-weight: bold;
     font-size: 14px;
 }

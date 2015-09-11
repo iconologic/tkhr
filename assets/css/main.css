@@ -6038,6 +6038,10 @@ nav li a {
   color: #009ac6;
 }
 
+.txt-blue-5 {
+  color: #355065;
+}
+
 .section-title {
   text-transform: uppercase;
   padding: 5px;
@@ -6493,33 +6497,39 @@ label {
   color: #ffffff;
 }
 
+.container.jobs-container {
+  margin-top: 1.4285714em;
+  margin-bottom: 1.4285714em;
+}
+
 .article {
   padding: 3px;
   margin: 2px;
 }
-
 .article .text {
   font-size: 12px;
   line-height: 17px;
 }
-
 .article .text.short {
   overflow: hidden;
 }
-
 .article .text.full {
   display: none;
+}
+.article p.h3 {
+  margin-top: 0;
 }
 
 .read-more {
   cursor: pointer;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   margin: 2px;
+  float: right;
 }
 
 .ellipsis {
-  color: #ffffff;
+  color: #355065;
   font-weight: bold;
   font-size: 14px;
 }

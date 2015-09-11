@@ -1,14 +1,18 @@
 <div class="container">
   <p class="txt-white">Apply For a Position</p>
+
+  <!--Begin Job Form-->
   <div class="container-fluid slate-gray">
-      <div class="row">
+
+    <!--NAME && LAST NAME-->
+    <div class="row">
       <div class="col-md-6">
         <form method="post">
           <div class="form-group ">
             <div class="row">
               <div class="col-md-3">
                 <label class="control-label requiredField" for="name">
-                  Name
+                  First Name
                 </label>
               </div>
               <div class="col-md-9">
@@ -19,20 +23,24 @@
         </form>
       </div>
       <div class="col-md-6">
-        <div class="form-group ">
-          <div class="row">
-            <div class="col-md-3">
-              <label class="control-label requiredField" for="lastname">
-                Last Name
-              </label>
-            </div>
-            <div class="col-md-9">
-              <input class="form-control" id="lastname" name="lastname" type="text"/>
+        <form method="post">
+          <div class="form-group ">
+            <div class="row">
+              <div class="col-md-3">
+                <label class="control-label requiredField" for="lastname">
+                  Last Name
+                </label>
+              </div>
+              <div class="col-md-9">
+                <input class="form-control" id="lastname" name="lastname" type="text"/>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
-      </div>
+    </div>
+
+    <!--EMAIL && POSITION-->
     <div class="row">
       <div class="col-md-6">
         <form method="post">
@@ -51,37 +59,55 @@
         </form>
       </div>
       <div class="col-md-6">
-        <div class="form-group">
-          <div class="row">
-            <div class="col-md-3">
-               <label class="control-label requiredField" for="position">
-              Position
-            </label>
-            </div>
-            <div class="col-md-9">
-              <input class="form-control" id="position" name="position" type="text"/>
+        <form method="post">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-3">
+                 <label class="control-label requiredField" for="position">
+                Position
+              </label>
+              </div>
+              <div class="col-md-9">
+                <input class="form-control" id="position" name="position" type="text"/>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
+
+    <!--FILE && SUBMIT BUTTON-->
     <div class="row">
       <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-3">
-            <label class="control-label requiredField" for="position">
-              Choose File
-            </label>
+        <form method="post">
+          <div class="form-group ">
+            <div class="row">
+              <div class="col-md-3">
+                <label class="control-label requiredField" for="position">
+                  Choose File
+                </label>
+              </div>
+              <div class="col-md-9">
+                <input type="file" class="file-btn">
+              </div>
+            </div>
           </div>
-          <div class="col-md-9">
-            <input type="file" class="file-btn">
-          </div>
-        </div>
+        </form>
       </div>
       <div class="col-md-6">
-        <button class="btn submit-btn " name="submit" type="submit">
-          Submit Resume
-        </button>
+        <form method="post">
+          <div class="form-group ">
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-9">
+                <button class="btn submit-btn " name="submit" type="submit">
+                  Submit Resume
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>

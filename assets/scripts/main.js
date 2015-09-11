@@ -53,8 +53,8 @@ $(document).ready(function() {
 	    var html = $(this).find(".text.full").html();        
 	    if(text.length > maxChars)
 	    {            
-	        var shortHtml = html.substring(0, maxChars - 3) + "<span class='ellipsis'>" + ellipsis + "</span>";
-	        $(this).find(".text.short").html(shortHtml);            
+	      var shortHtml = html.substring(0, maxChars - 3) + "<span class='ellipsis'>" + ellipsis + "</span>";
+	      $(this).find(".text.short").html(shortHtml);            
 	    }
 	});
 	$(".read-more").click(function(){        
