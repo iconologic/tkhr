@@ -41,8 +41,12 @@
   {{ "bootstrap.js" | asset_url | script_tag }}
   {{ "main.js" | asset_url | script_tag }}
   {{ "easyResponsiveTabs.js" | asset_url | script_tag }}
-  
 
+  <!--Google Map-->
+
+  {{ "map.js" | asset_url | script_tag }}
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1QiHDH_aV5TJjz1_Rqjk-W320SF6UejQ&callback=initMap">
+  </script>
 
   <!-- Script block allowing child pages to inject their own scripts -->
   {% block scripts %}{% endblock %}

@@ -6497,6 +6497,11 @@ label {
   color: #ffffff;
 }
 
+textarea {
+  margin-left: 35px;
+  max-width: 714px;
+}
+
 .container.jobs-container {
   margin-top: 1.4285714em;
   margin-bottom: 1.4285714em;
