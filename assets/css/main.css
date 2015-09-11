@@ -5892,6 +5892,10 @@ nav li a {
   background-image: url("../images/sprites.png");
 }
 
+#google-map {
+  height: 400px;
+}
+
 .text-hide {
   font: 0/0 a;
   color: transparent;
