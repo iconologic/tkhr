@@ -12,6 +12,7 @@ body {
 	background-size: cover;
 	position: relative;
 	min-height: 100%;
+	font-family: etelka_text_proregular;
 }
 
 .container {
@@ -20,6 +21,11 @@ body {
 
 .tagline {
 	padding: 2em;
+	margin: 45px 0;
+
+	p.txt-md, p.txt-lg {
+		line-height: 1;
+	}
 }
 
 // Intro text on secondary pages
@@ -29,9 +35,4 @@ body {
 
 nav li a {
 	background-image:url('../images/sprites.png');
-}
-
-// Google Map Styles
-#google-map {
-	height: 400px
 }

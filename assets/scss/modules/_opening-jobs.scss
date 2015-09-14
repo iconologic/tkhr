@@ -10,7 +10,6 @@
     margin: 2px;
 
     .text {
-        font-size: 12px;
         line-height: 17px;
         &.short {
             overflow: hidden;
@@ -36,5 +35,4 @@
 .ellipsis {
     color: $blue-5;
     font-weight: bold;
-    font-size: 14px;
 }

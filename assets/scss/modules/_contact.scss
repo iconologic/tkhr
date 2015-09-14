@@ -1,4 +1,40 @@
-// Google map 
-#google-map { 
-	height: 390px; 
+.container {
+	&.connect {
+		margin: 20px 0;
+	}
 }
+
+// Google Map Styles
+
+#map {
+	margin-top: 20px;
+
+	h4 {
+		font-weight: 300;
+	}
+
+	ul li {
+		list-style-type: none;
+	}
+
+	#google-map {
+		height: 400px;
+	}
+
+	p{
+		font-size: (16);
+		&.h2.txt-white {
+				margin: 0 20px;
+			}
+	}
+}
+
+#direction {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#direction .resp-vtabs .resp-tabs-container {
+	max-height: 150px;
+}
+

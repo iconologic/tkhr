@@ -5874,6 +5874,7 @@ body {
   background-size: cover;
   position: relative;
   min-height: 100%;
+  font-family: etelka_text_proregular;
 }
 
 .container {
@@ -5882,6 +5883,10 @@ body {
 
 .tagline {
   padding: 2em;
+  margin: 45px 0;
+}
+.tagline p.txt-md, .tagline p.txt-lg {
+  line-height: 1;
 }
 
 #intro, #services {
@@ -5890,10 +5895,6 @@ body {
 
 nav li a {
   background-image: url("../images/sprites.png");
-}
-
-#google-map {
-  height: 400px;
 }
 
 .text-hide {
@@ -5968,8 +5969,23 @@ nav li a {
   padding: 1.7857143em;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: etelka_medium_proregular;
+}
+
+p, li, span {
+  font-family: etelka_text_proregular;
+}
+
+a {
+  font-family: etelka_light_proregular;
+}
+a:hover {
+  font-family: etelka_medium_proregular;
+}
+
 .headline {
-  font-size: 1.4285714em;
+  font-size: 1.2857143em;
   color: #355065;
 }
 
@@ -6086,7 +6102,8 @@ h2.resp-accordion {
 
 .resp-tab-content {
   display: none;
-  padding: 15px;
+  padding: 34px;
+  font-size: 15px;
 }
 
 .resp-tab-active {
@@ -6261,6 +6278,118 @@ h2.resp-accordion:first-child {
     border-bottom: 1px solid #c1c1c1 !important;
   }
 }
+@font-face {
+  font-family: 'etelka_light_proregular';
+  src: url("../fonts/etelkalightpro-webfont.eot");
+  src: url("../fonts/etelkalightpro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkalightpro-webfont.woff2") format("woff2"), url("../fonts/etelkalightpro-webfont.woff") format("woff"), url("../fonts/etelkalightpro-webfont.ttf") format("truetype"), url("../fonts/etelkalightpro-webfont.svg#etelka_light_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_light_probold';
+  src: url("../fonts/etelkalightprobold-webfont.eot");
+  src: url("../fonts/etelkalightprobold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkalightprobold-webfont.woff2") format("woff2"), url("../fonts/etelkalightprobold-webfont.woff") format("woff"), url("../fonts/etelkalightprobold-webfont.ttf") format("truetype"), url("../fonts/etelkalightprobold-webfont.svg#etelka_light_probold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_light_probold_italic';
+  src: url("../fonts/etelkalightprobolditalic-webfont.eot");
+  src: url("../fonts/etelkalightprobolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkalightprobolditalic-webfont.woff2") format("woff2"), url("../fonts/etelkalightprobolditalic-webfont.woff") format("woff"), url("../fonts/etelkalightprobolditalic-webfont.ttf") format("truetype"), url("../fonts/etelkalightprobolditalic-webfont.svg#etelka_light_probold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_light_proitalic';
+  src: url("../fonts/etelkalightproitalic-webfont.eot");
+  src: url("../fonts/etelkalightproitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkalightproitalic-webfont.woff2") format("woff2"), url("../fonts/etelkalightproitalic-webfont.woff") format("woff"), url("../fonts/etelkalightproitalic-webfont.ttf") format("truetype"), url("../fonts/etelkalightproitalic-webfont.svg#etelka_light_proitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_medium_proregular';
+  src: url("../fonts/etelkamediumpro-webfont.eot");
+  src: url("../fonts/etelkamediumpro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkamediumpro-webfont.woff2") format("woff2"), url("../fonts/etelkamediumpro-webfont.woff") format("woff"), url("../fonts/etelkamediumpro-webfont.ttf") format("truetype"), url("../fonts/etelkamediumpro-webfont.svg#etelka_medium_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_medium_probold';
+  src: url("../fonts/etelkamediumprobold-webfont.eot");
+  src: url("../fonts/etelkamediumprobold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkamediumprobold-webfont.woff2") format("woff2"), url("../fonts/etelkamediumprobold-webfont.woff") format("woff"), url("../fonts/etelkamediumprobold-webfont.ttf") format("truetype"), url("../fonts/etelkamediumprobold-webfont.svg#etelka_medium_probold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_medium_probold_italic';
+  src: url("../fonts/etelkamediumprobolditalic-webfont.eot");
+  src: url("../fonts/etelkamediumprobolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkamediumprobolditalic-webfont.woff2") format("woff2"), url("../fonts/etelkamediumprobolditalic-webfont.woff") format("woff"), url("../fonts/etelkamediumprobolditalic-webfont.ttf") format("truetype"), url("../fonts/etelkamediumprobolditalic-webfont.svg#etelka_medium_probold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_medium_proitalic';
+  src: url("../fonts/etelkamediumproitalic-webfont.eot");
+  src: url("../fonts/etelkamediumproitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkamediumproitalic-webfont.woff2") format("woff2"), url("../fonts/etelkamediumproitalic-webfont.woff") format("woff"), url("../fonts/etelkamediumproitalic-webfont.ttf") format("truetype"), url("../fonts/etelkamediumproitalic-webfont.svg#etelka_medium_proitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_monospace_proregular';
+  src: url("../fonts/etelkamonospacepro-webfont.eot");
+  src: url("../fonts/etelkamonospacepro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkamonospacepro-webfont.woff2") format("woff2"), url("../fonts/etelkamonospacepro-webfont.woff") format("woff"), url("../fonts/etelkamonospacepro-webfont.ttf") format("truetype"), url("../fonts/etelkamonospacepro-webfont.svg#etelka_monospace_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_monospace_probold';
+  src: url("../fonts/etelkamonospaceprobold-webfont.eot");
+  src: url("../fonts/etelkamonospaceprobold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkamonospaceprobold-webfont.woff2") format("woff2"), url("../fonts/etelkamonospaceprobold-webfont.woff") format("woff"), url("../fonts/etelkamonospaceprobold-webfont.ttf") format("truetype"), url("../fonts/etelkamonospaceprobold-webfont.svg#etelka_monospace_probold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_monospace_proBdIt';
+  src: url("../fonts/etelkamonospaceprobolditalic-webfont.eot");
+  src: url("../fonts/etelkamonospaceprobolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkamonospaceprobolditalic-webfont.woff2") format("woff2"), url("../fonts/etelkamonospaceprobolditalic-webfont.woff") format("woff"), url("../fonts/etelkamonospaceprobolditalic-webfont.ttf") format("truetype"), url("../fonts/etelkamonospaceprobolditalic-webfont.svg#etelka_monospace_proBdIt") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_monospace_proitalic';
+  src: url("../fonts/etelkamonospaceproitalic-webfont.eot");
+  src: url("../fonts/etelkamonospaceproitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkamonospaceproitalic-webfont.woff2") format("woff2"), url("../fonts/etelkamonospaceproitalic-webfont.woff") format("woff"), url("../fonts/etelkamonospaceproitalic-webfont.ttf") format("truetype"), url("../fonts/etelkamonospaceproitalic-webfont.svg#etelka_monospace_proitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_text_proregular';
+  src: url("../fonts/etelkatextpro-webfont.eot");
+  src: url("../fonts/etelkatextpro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkatextpro-webfont.woff2") format("woff2"), url("../fonts/etelkatextpro-webfont.woff") format("woff"), url("../fonts/etelkatextpro-webfont.ttf") format("truetype"), url("../fonts/etelkatextpro-webfont.svg#etelka_text_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_text_probold';
+  src: url("../fonts/etelkatextprobold-webfont.eot");
+  src: url("../fonts/etelkatextprobold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkatextprobold-webfont.woff2") format("woff2"), url("../fonts/etelkatextprobold-webfont.woff") format("woff"), url("../fonts/etelkatextprobold-webfont.ttf") format("truetype"), url("../fonts/etelkatextprobold-webfont.svg#etelka_text_probold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_text_probold_italic';
+  src: url("../fonts/etelkatextprobolditalic-webfont.eot");
+  src: url("../fonts/etelkatextprobolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkatextprobolditalic-webfont.woff2") format("woff2"), url("../fonts/etelkatextprobolditalic-webfont.woff") format("woff"), url("../fonts/etelkatextprobolditalic-webfont.ttf") format("truetype"), url("../fonts/etelkatextprobolditalic-webfont.svg#etelka_text_probold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'etelka_text_proitalic';
+  src: url("../fonts/etelkatextproitalic-webfont.eot");
+  src: url("../fonts/etelkatextproitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/etelkatextproitalic-webfont.woff2") format("woff2"), url("../fonts/etelkatextproitalic-webfont.woff") format("woff"), url("../fonts/etelkatextproitalic-webfont.ttf") format("truetype"), url("../fonts/etelkatextproitalic-webfont.svg#etelka_text_proitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 header {
   background-color: #ffffff;
   border-bottom: 5px solid #f7971e;
@@ -6272,7 +6401,6 @@ header a {
 header a:hover, header a.active, header a:focus {
   color: #33afd3;
   text-decoration: none;
-  font-weight: bold;
 }
 header .logo {
   padding: 40px 0;
@@ -6449,6 +6577,14 @@ footer {
   color: #ffffff;
   padding: 1.4285714em;
   background-color: #004960;
+  font-size: 0.8571429em;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+footer p {
+  padding-top: 0.5em;
 }
 footer a {
   color: #ffffff;
@@ -6516,7 +6652,6 @@ textarea {
   margin: 2px;
 }
 .article .text {
-  font-size: 12px;
   line-height: 17px;
 }
 .article .text.short {
@@ -6540,5 +6675,36 @@ textarea {
 .ellipsis {
   color: #355065;
   font-weight: bold;
-  font-size: 14px;
+}
+
+.container.connect {
+  margin: 20px 0;
+}
+
+#map {
+  margin-top: 20px;
+}
+#map h4 {
+  font-weight: 300;
+}
+#map ul li {
+  list-style-type: none;
+}
+#map #google-map {
+  height: 400px;
+}
+#map p {
+  font-size: 16;
+}
+#map p.h2.txt-white {
+  margin: 0 20px;
+}
+
+#direction {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#direction .resp-vtabs .resp-tabs-container {
+  max-height: 150px;
 }

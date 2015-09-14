@@ -126,7 +126,15 @@ footer {
 	color: $white;
 	padding: em(20);
 	background-color: $slate-gray;
-
+	font-size: em(12);
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width: 100%;
+	
+	p {
+		padding-top: em(7);
+	}
 
 	a {
 		color: $white;
