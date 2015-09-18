@@ -31,8 +31,13 @@ body {
 // Intro text on secondary pages
 #intro, #services {
 	margin-bottom: 30px;
+	padding-top: 30px;
 }
 
 nav li a {
 	background-image:url('../images/sprites.png');
+}
+
+.list-unstyled li a{
+	color: $blue-4;
 }

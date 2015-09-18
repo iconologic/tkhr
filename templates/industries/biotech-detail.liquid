@@ -1,0 +1,38 @@
+{% block content %} 
+	<div class="container-fluid white" >
+		<div class="container" id="electrical-detail">
+
+			<div class="row">
+				<div class="col-md-2">
+					<img class="industries-logo img-responsive" src="{{ "biotech-detail-logo.png" | asset_url }}" />
+				</div>
+				<div class="col-md-10">
+					<h1 class="txt-blue-5 title">Biotechnology</h1>
+				</div>
+			</div>
+			
+			<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus laborum molestias id maxime optio hic, commodi sunt ipsam obcaecati quaerat cupiditate illo dignissimos facere, delectus praesentium excepturi velit eos sapiente.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi alias aperiam facere saepe quos, voluptas, omnis sunt architecto minus perspiciatis vero! Aspernatur dignissimos molestias deleniti corporis explicabo vitae ipsum at?</p>
+			
+			<br>
+
+			<p class="headline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, mollitia consequuntur nulla, eaque quod aliquam adipisci esse dolorem ducimus quisquam quos nobis quam officia fugiat tempore exercitationem aliquid porro autem.</p>
+		</div>
+
+		{% include "focus-areas" %}
+		{% include "categories-dark" %}
+		
+	</div>
+	<div class="container">
+		<div class="row team-grid">
+			<div class="col-md-2">
+				<p>PRACTICE AREA <br> SPECIALISTS</p>
+			</div>
+			<div class="col-md-10">
+				{% include "related" %}
+			</div>
+		</div>
+		
+	</div>
+	
+	
+{% endblock %}

@@ -1,11 +1,20 @@
 header {
 	background-color: $white;
 	border-bottom: 5px solid $orange;
+
+	li {
+		max-width: 100%;
+	}
 	
 	// Link Styles
-	a {
-		color: $blue-3;
+	a, .dropdown-menu a {
+		color: $blue-5;
 		text-transform: uppercase;
+		font-weight: 600;
+
+		&:hover {
+			font-family: etelka_light_proregular;
+		}
 		
 		&:hover, &.active,
 		&:focus {
@@ -22,6 +31,39 @@ header {
 	}
 
 	ul li a{
-		padding: 0 20px;
+		padding: 5px 15px;
+	}
+
+	.open > .dropdown-menu {
+	  display: table;
+	}
+
+	.dropdown-menu {
+    position: static;
+    left: 0;
+    display: none;
+    float: none;
+    width: auto;
+    list-style: none;
+    border-radius: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-clip: none;
+    border: 0;
+    li {
+    	max-width: 100%;
+    	display: flex;
+    	margin: 0 auto;
+
+    	a {
+
+	    	&:focus {
+	    		background-color: $white;
+	    	}
+	    	&:hover {
+	    		background-color: $white;
+	    	}
+	    }
+    }
 	}
 }

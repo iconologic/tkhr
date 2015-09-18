@@ -76,4 +76,11 @@ $(document).ready(function() {
 	        $(this).text(readMoreText);
 	    }       
 	});
+
+	//Prople category filter dropdown toggle
+
+	$("li.dropdown").click(function(){	
+		$(this).prev( "li" ).toggleClass( "active" );	  
+	});
+
 });

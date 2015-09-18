@@ -1,16 +1,70 @@
+#team-grid {
+	margin: 30px auto;
+
+	.people-filter {
+		padding-bottom: 20px;
+
+		ul {
+
+			li {
+				list-style-type: none;
+				display: inline-flex;
+
+				a {
+					color: $white;
+					text-decoration: none;
+					display: inline-block;
+					float: left;
+					padding: 0 20px 0 0;
+
+					&:hover {
+						background-color: transparent;
+						font-style: italic;
+					}
+				}
+			}
+		}
+
+		.open > ul {
+		    display: inline-flex !important;
+		    background-color: transparent;
+		    border: 0;
+		    box-shadow: none;
+		    margin-left: -40px;
+
+		    li {
+
+		    	a {
+		    		color: $orange;
+		    	}
+		    }
+		}
+
+		li.fa-arrow-right {
+			-ms-transform: rotate(0deg); /* IE 9 */
+			-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			transform: rotate(0deg);
+		}
+
+		li.fa-arrow-right.active {
+		  -ms-transform: rotate(90deg); /* IE 9 */
+		  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+		  transform: rotate(90deg);
+		}	
+	}
+}
+
 .team-grid {
 	clear: both;
-	padding: 20px 0;	
+	padding: 2px 0;	
 	color: $white;
+	margin-bottom: 5px;
 
 	.grid-item {
 		padding: 2.5px;
 	
 		a {
 			color: $white;
-			&:hover {
-				color: $orange;
-			}
 		}
 		
 		// Overlay
@@ -23,6 +77,13 @@
 			// -ms-transition: all 0.4s ease-in-out;
 			// -o-transition: all 0.4s ease-in-out;
 			// transition: all 0.4s ease-in-out;
+
+			&:hover {
+				background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
+				background-size: 30px auto;
+				background-repeat: no-repeat;
+				background-position: 12px 165px, 50px 163px;
+			}
 
 			.team-name {
 				z-index: 2;
@@ -75,7 +136,8 @@
 .people-detail {
 
 	p {
-		color: #004960;
+		color: $slate-gray;
+		font-family: etelka_text_proregular;
 	}
 
 	ul {
@@ -94,6 +156,16 @@
 
 	img.industries-logo {
 		margin: 0 auto;
-		width: 50%;
+    width: 50%;
+    padding-left: 10px;
+	}
+
+	.h4 {
+		font-family: etelka_medium_proregular;
+		font-size: em(14);
+	}
+
+	.fa-linkedin-square {
+		font-size: 2em;
 	}
 }

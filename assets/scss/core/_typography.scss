@@ -8,8 +8,9 @@ p, li, span {
 
 a {
     font-family: etelka_light_proregular;
+
     &:hover {
-        font-family: etelka_medium_proregular;
+      font-family: etelka_medium_proregular;
     }
 }
 
@@ -19,12 +20,15 @@ a {
 }
 
 .h1 {
-	color: $blue-4;
 	font-size: em(43);
 }
 
 .h2 {
 	font-size: em(35);
+}
+
+.h4 {
+	font-size: em(14);
 }
 
 .txt-lg {
@@ -42,6 +46,8 @@ a {
 // Font Styles
 .txt-italic { font-style: italic; }
 .txt-bold { font-weight: bold; }
+.uppercase { text-transform: uppercase;}
+.lowercase {text-transform: lowercase;}
 
 // Font Color 
 .blue-1 { color: $blue-1; }
@@ -51,6 +57,7 @@ a {
 
 .txt-orange {	color: $orange; }
 .txt-white{	color: $white; }
+.txt-slate-gray { color: $slate-gray }
 .txt-blue-1{	color: $blue-1; }
 .txt-blue-2{	color: $blue-2; }
 .txt-blue-3{	color: $blue-3; }
@@ -60,7 +67,7 @@ a {
 
 
 // Section Title
-.section-title {
+.section-title{
 	text-transform: uppercase;
 	padding: 5px;
 	border-bottom: 1px solid $text;
