@@ -31,11 +31,20 @@ header {
 	}
 
 	ul li a{
-		padding: 5px 15px;
+		// padding: 5px 15px;
 	}
 
 	.open > .dropdown-menu {
 	  display: table;
+	}
+
+	.list-inline > li {
+		min-width: 175px;
+		// border: 1px solid black;
+
+		> a {
+			width: 175px;
+		}
 	}
 
 	.dropdown-menu {
@@ -50,12 +59,15 @@ header {
     box-shadow: none !important;
     background-clip: none;
     border: 0;
+
     li {
     	max-width: 100%;
     	display: flex;
     	margin: 0 auto;
 
     	a {
+
+    		padding: 0 !important;
 
 	    	&:focus {
 	    		background-color: $white;

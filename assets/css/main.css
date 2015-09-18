@@ -6442,11 +6442,14 @@ header .logo {
   margin: 0 auto;
   display: block;
 }
-header ul li a {
-  padding: 5px 15px;
-}
 header .open > .dropdown-menu {
   display: table;
+}
+header .list-inline > li {
+  min-width: 175px;
+}
+header .list-inline > li > a {
+  width: 175px;
 }
 header .dropdown-menu {
   position: static;
@@ -6465,6 +6468,9 @@ header .dropdown-menu li {
   max-width: 100%;
   display: flex;
   margin: 0 auto;
+}
+header .dropdown-menu li a {
+  padding: 0 !important;
 }
 header .dropdown-menu li a:focus {
   background-color: #ffffff;
