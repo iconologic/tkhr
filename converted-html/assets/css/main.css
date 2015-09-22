@@ -6442,20 +6442,21 @@ header .logo {
   margin: 0 auto;
   display: block;
 }
-header ul li a {
-  padding: 0 20px;
-}
 header .open > .dropdown-menu {
   display: table;
 }
+header .list-inline > li {
+  min-width: 175px;
+}
+header .list-inline > li > a {
+  width: 175px;
+}
 header .dropdown-menu {
-  position: relative;
+  position: static;
   left: 0;
   display: none;
   float: none;
   width: auto;
-  padding: 5px 15px;
-  margin: 0 auto;
   list-style: none;
   border-radius: 0;
   -webkit-box-shadow: none !important;
@@ -6465,9 +6466,11 @@ header .dropdown-menu {
 }
 header .dropdown-menu li {
   max-width: 100%;
-  padding: 0;
   display: flex;
   margin: 0 auto;
+}
+header .dropdown-menu li a {
+  padding: 0 !important;
 }
 header .dropdown-menu li a:focus {
   background-color: #ffffff;
@@ -6708,9 +6711,6 @@ header .dropdown-menu li a:hover {
   border-bottom: 0;
   border-top: 1px solid #004960;
   padding-top: 15px;
-}
-#focus-area ul {
-  padding-left: 35px;
 }
 
 footer {
