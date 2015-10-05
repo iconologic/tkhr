@@ -54,11 +54,14 @@
 	}
 }
 
+
+
 .team-grid {
 	clear: both;
 	padding: 2px 0;	
 	color: $white;
 	margin-bottom: 5px;
+	margin-top: 30px;
 
 	.grid-item {
 		padding: 2.5px;
@@ -77,13 +80,17 @@
 			// -ms-transition: all 0.4s ease-in-out;
 			// -o-transition: all 0.4s ease-in-out;
 			// transition: all 0.4s ease-in-out;
-
+			background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
+			background-size: 30px auto;
+			background-repeat: no-repeat;
+			background-position: 12px 165px, 50px 163px;
+/*
 			&:hover {
 				background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
 				background-size: 30px auto;
 				background-repeat: no-repeat;
 				background-position: 12px 165px, 50px 163px;
-			}
+			}*/
 
 			.team-name {
 				z-index: 2;

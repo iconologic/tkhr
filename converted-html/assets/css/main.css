@@ -6421,6 +6421,11 @@ h2.resp-accordion:first-child {
 header {
   background-color: #ffffff;
   border-bottom: 5px solid #f7971e;
+  /*	.dropdown:hover .dropdown-menu {
+  		display: block;
+  		margin-top: 0;
+  	}*/
+  /*hover dropdown*/
 }
 header li {
   max-width: 100%;
@@ -6436,6 +6441,10 @@ header a:hover, header .dropdown-menu a:hover {
 header a:hover, header a.active, header a:focus, header .dropdown-menu a:hover, header .dropdown-menu a.active, header .dropdown-menu a:focus {
   color: #33afd3;
   text-decoration: none;
+  background-color: transparent;
+}
+header .dropdown-menu a {
+  color: #ffffff;
 }
 header .logo {
   padding: 40px 0;
@@ -6443,10 +6452,14 @@ header .logo {
   display: block;
 }
 header .open > .dropdown-menu {
-  display: table;
+  position: absolute;
+  background-color: #f7971e;
+  margin-top: 12px;
 }
 header .list-inline > li {
+  display: initial;
   min-width: 175px;
+  padding: 0 25px;
 }
 header .list-inline > li > a {
   width: 175px;
@@ -6466,17 +6479,11 @@ header .dropdown-menu {
 }
 header .dropdown-menu li {
   max-width: 100%;
-  display: flex;
-  margin: 0 auto;
+  display: block;
+  padding: 8px 55px 8px 25px;
 }
 header .dropdown-menu li a {
   padding: 0 !important;
-}
-header .dropdown-menu li a:focus {
-  background-color: #ffffff;
-}
-header .dropdown-menu li a:hover {
-  background-color: #ffffff;
 }
 
 #team-grid {
@@ -6530,6 +6537,7 @@ header .dropdown-menu li a:hover {
   padding: 2px 0;
   color: #ffffff;
   margin-bottom: 5px;
+  margin-top: 30px;
 }
 .team-grid .grid-item {
   padding: 2.5px;
@@ -6541,13 +6549,17 @@ header .dropdown-menu li a:hover {
 .team-grid .grid-item .team-counsel, .team-grid .grid-item .team-patent {
   height: 100%;
   z-index: 1;
-}
-.team-grid .grid-item .team-partner:hover, .team-grid .grid-item .team-associate:hover,
-.team-grid .grid-item .team-counsel:hover, .team-grid .grid-item .team-patent:hover {
   background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
   background-size: 30px auto;
   background-repeat: no-repeat;
   background-position: 12px 165px, 50px 163px;
+  /*
+  			&:hover {
+  				background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
+  				background-size: 30px auto;
+  				background-repeat: no-repeat;
+  				background-position: 12px 165px, 50px 163px;
+  			}*/
 }
 .team-grid .grid-item .team-partner .team-name, .team-grid .grid-item .team-associate .team-name,
 .team-grid .grid-item .team-counsel .team-name, .team-grid .grid-item .team-patent .team-name {

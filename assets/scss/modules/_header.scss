@@ -20,9 +20,22 @@ header {
 		&:focus {
 			color: $blue-3;
 			text-decoration: none;
+			background-color: transparent;
 		}
+
+
+	}
+
+	.dropdown-menu a {
+		color: $white;
 	}
 	
+	
+/*	.dropdown:hover .dropdown-menu {
+		display: block;
+		margin-top: 0;
+	}*/ /*hover dropdown*/
+
 	// Logo Styles
 	.logo {
 		padding: 40px 0;
@@ -35,12 +48,23 @@ header {
 	}
 
 	.open > .dropdown-menu {
-	  display: table;
+		position: absolute;
+		background-color: #f7971e;
+		margin-top: 10px;
+		-webkit-transform: scale(1, 1);
+		 transform: scale(1, 1);  
+		 opacity:1;
+	}
+
+	.list-inline {
+		height: 20px;
 	}
 
 	.list-inline > li {
+		
+		display: inline-table;
 		min-width: 175px;
-		// border: 1px solid black;
+		padding: 0 25px;
 
 		> a {
 			width: 175px;
@@ -52,30 +76,35 @@ header {
     left: 0;
     display: none;
     float: none;
-    width: auto;
+    min-width: 175px;
     list-style: none;
     border-radius: 0;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     background-clip: none;
     border: 0;
+    opacity:.3;
+     -webkit-transform-origin: top;
+     transform-origin: top;
+     -webkit-animation-fill-mode: forwards;  
+     animation-fill-mode: forwards; 
+     -webkit-transform: scale(1, 0);
+     display: block; 
+     transition: all 0.3s linear;
+     -webkit-transition: all 0.3s linear;
+    
 
-    li {
-    	max-width: 100%;
-    	display: flex;
-    	margin: 0 auto;
 
-    	a {
+	    li {
+	    	max-width: 100%;
+	    	display: block;
+	    	padding: 8px 55px 8px 25px;
 
-    		padding: 0 !important;
+	    	a {
 
-	    	&:focus {
-	    		background-color: $white;
-	    	}
-	    	&:hover {
-	    		background-color: $white;
-	    	}
+	    		padding: 0 !important;
+
+		    }
 	    }
-    }
 	}
 }
