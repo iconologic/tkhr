@@ -6454,7 +6454,7 @@ header .logo {
 header .open > .dropdown-menu {
   position: absolute;
   background-color: #f7971e;
-  margin-top: 10px;
+  margin-top: 12px;
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1);
   opacity: 1;
@@ -6463,19 +6463,21 @@ header .list-inline {
   height: 20px;
 }
 header .list-inline > li {
-  display: inline-table;
-  min-width: 175px;
+  display: initial;
+  min-width: 150px;
   padding: 0 25px;
 }
 header .list-inline > li > a {
-  width: 175px;
+  /*			width: 175px;
+  */
 }
 header .dropdown-menu {
   position: static;
+  display: grid;
   left: 0;
   display: none;
   float: none;
-  min-width: 175px;
+  min-width: 0px;
   list-style: none;
   border-radius: 0;
   -webkit-box-shadow: none !important;
@@ -6488,7 +6490,6 @@ header .dropdown-menu {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-transform: scale(1, 0);
-  display: block;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
 }
@@ -6707,7 +6708,7 @@ header .dropdown-menu li a {
   width: 175px;
 }
 .footer-category.dark .nav-button-mechanical a {
-  background-position: -357px -9px;
+  background-position: -355px -9px;
   width: 160px;
 }
 .footer-category.dark .nav-button-chemistry a {
@@ -6867,6 +6868,7 @@ textarea {
 }
 #map p.h2.txt-white {
   margin: 0 auto;
+  padding-right: 40px;
 }
 
 #direction {

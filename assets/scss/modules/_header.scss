@@ -50,7 +50,7 @@ header {
 	.open > .dropdown-menu {
 		position: absolute;
 		background-color: #f7971e;
-		margin-top: 10px;
+		margin-top: 12px;
 		-webkit-transform: scale(1, 1);
 		 transform: scale(1, 1);  
 		 opacity:1;
@@ -62,37 +62,37 @@ header {
 
 	.list-inline > li {
 		
-		display: inline-table;
-		min-width: 175px;
+		display: initial;
+		min-width: 150px;
 		padding: 0 25px;
 
 		> a {
-			width: 175px;
-		}
+/*			width: 175px;
+*/		}
 	}
 
 	.dropdown-menu {
-    position: static;
-    left: 0;
-    display: none;
-    float: none;
-    min-width: 175px;
-    list-style: none;
-    border-radius: 0;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    background-clip: none;
-    border: 0;
-    opacity:.3;
-     -webkit-transform-origin: top;
-     transform-origin: top;
-     -webkit-animation-fill-mode: forwards;  
-     animation-fill-mode: forwards; 
-     -webkit-transform: scale(1, 0);
-     display: block; 
-     transition: all 0.3s linear;
-     -webkit-transition: all 0.3s linear;
-    
+	    position: static;
+	    display: grid;
+	    left: 0;
+	    display: none;
+	    float: none;
+	    min-width: 0px;
+	    list-style: none;
+	    border-radius: 0;
+	    -webkit-box-shadow: none !important;
+	    box-shadow: none !important;
+	    background-clip: none;
+	    border: 0;
+	    opacity:.3;
+	     -webkit-transform-origin: top;
+	     transform-origin: top;
+	     -webkit-animation-fill-mode: forwards;  
+	     animation-fill-mode: forwards; 
+	     -webkit-transform: scale(1, 0);
+	     transition: all 0.3s linear;
+	     -webkit-transition: all 0.3s linear;
+	    
 
 
 	    li {

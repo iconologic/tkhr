@@ -6454,10 +6454,16 @@ header .logo {
 header .open > .dropdown-menu {
   position: absolute;
   background-color: #f7971e;
-  margin-top: 12px;
+  margin-top: 10px;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
+}
+header .list-inline {
+  height: 20px;
 }
 header .list-inline > li {
-  display: initial;
+  display: inline-table;
   min-width: 175px;
   padding: 0 25px;
 }
@@ -6469,13 +6475,22 @@ header .dropdown-menu {
   left: 0;
   display: none;
   float: none;
-  width: auto;
+  min-width: 175px;
   list-style: none;
   border-radius: 0;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   background-clip: none;
   border: 0;
+  opacity: .3;
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-transform: scale(1, 0);
+  display: block;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
 }
 header .dropdown-menu li {
   max-width: 100%;
