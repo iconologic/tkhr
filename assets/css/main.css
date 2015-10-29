@@ -5902,6 +5902,10 @@ nav li a {
   color: #009ac6;
 }
 
+.headline > p {
+  margin-bottom: 15px;
+}
+
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -6129,6 +6133,9 @@ h2.resp-accordion {
   padding: 34px;
   font-size: 15px;
   line-height: 1.75;
+}
+.resp-tab-content p {
+  margin-bottom: 15px;
 }
 
 .resp-tab-active {
@@ -6447,9 +6454,8 @@ header .dropdown-menu a {
   color: #ffffff;
 }
 header .logo {
-  padding: 40px 0;
-  margin: 0 auto;
-  display: block;
+  padding-top: 40px;
+  margin: 0 auto 40px;
 }
 header .open > .dropdown-menu {
   position: absolute;
