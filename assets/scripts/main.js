@@ -16,6 +16,27 @@ $(document).ready(function() {
 	     }
 	 });
 
+	 // Append industry images to people grid based on class 
+	 if ( $('.team-partner').hasClass('electrical') ) {
+	 	// console.log('has class electrical');
+	 	$('.icon-overlay').append('<img src="../images/overlay-electrical-logo.png" />')
+	 }
+
+	 if ( $('.team-partner').hasClass('bio') ) {
+	 	// console.log('has class bio');
+	 	$('.icon-overlay').append('<img src="../images/overlay-bio-logo.png" />')
+	 }
+
+	 if ( $('.team-partner').hasClass('mechanical') ) {
+	 	// console.log('has class mechanical');
+	 	$('.icon-overlay').append('<img src="../images/overlay-mechanical-logo.png" />')
+	 }
+
+	 if ( $('.team-partner').hasClass('chemistry') ) {
+	 	// console.log('has class chemistry');
+	 	$('.icon-overlay').append('<img src="../images/overlay-chemistry-logo.png" />')
+	 }
+
 	//Random bg
     var images = [
     	'bg_1.jpg', 
@@ -42,7 +63,7 @@ $(document).ready(function() {
 	}
 
 	// Hover Effect for Team Grid
-	$('.team-partner, .team-associate, .team-counsel, .team-patent').hover(hoverIn, hoverOut)
+	$('.team-partner, .team-associate, .team-counsel, .team-patent, .team-technical').hover(hoverIn, hoverOut)
 
 	// Job Openings Read More
 

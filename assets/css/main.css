@@ -5899,7 +5899,7 @@ nav li a {
 }
 
 .list-unstyled li a {
-  color: #009ac6;
+  color: #008fbe;
 }
 
 .headline > p {
@@ -5955,28 +5955,28 @@ nav li a {
 }
 
 .blue-1 {
-  background-color: #8bd2e6;
+  background-color: #7fcce1;
 }
 .blue-1.container-fluid {
   padding: 1.7857143em;
 }
 
 .blue-2 {
-  background-color: #65c3dd;
+  background-color: #44bcd7;
 }
 .blue-2.container-fluid {
   padding: 1.7857143em;
 }
 
 .blue-3 {
-  background-color: #33afd3;
+  background-color: #00a5ca;
 }
 .blue-3.container-fluid {
   padding: 1.7857143em;
 }
 
 .blue-4 {
-  background-color: #009ac6;
+  background-color: #008fbe;
 }
 .blue-4.container-fluid {
   padding: 1.7857143em;
@@ -6043,19 +6043,19 @@ a:hover {
 }
 
 .blue-1 {
-  color: #8bd2e6;
+  color: #7fcce1;
 }
 
 .blue-2 {
-  color: #65c3dd;
+  color: #44bcd7;
 }
 
 .blue-3 {
-  color: #33afd3;
+  color: #00a5ca;
 }
 
 .blue-4 {
-  color: #009ac6;
+  color: #008fbe;
 }
 
 .txt-orange {
@@ -6071,19 +6071,19 @@ a:hover {
 }
 
 .txt-blue-1 {
-  color: #8bd2e6;
+  color: #7fcce1;
 }
 
 .txt-blue-2 {
-  color: #65c3dd;
+  color: #44bcd7;
 }
 
 .txt-blue-3 {
-  color: #33afd3;
+  color: #00a5ca;
 }
 
 .txt-blue-4 {
-  color: #009ac6;
+  color: #008fbe;
 }
 
 .txt-blue-5 {
@@ -6446,7 +6446,7 @@ header a:hover, header .dropdown-menu a:hover {
   font-family: etelka_light_proregular;
 }
 header a:hover, header a.active, header a:focus, header .dropdown-menu a:hover, header .dropdown-menu a.active, header .dropdown-menu a:focus {
-  color: #33afd3;
+  color: #00a5ca;
   text-decoration: none;
   background-color: transparent;
 }
@@ -6568,45 +6568,48 @@ header .dropdown-menu li a {
   color: #ffffff;
 }
 .team-grid .grid-item .team-partner, .team-grid .grid-item .team-associate,
-.team-grid .grid-item .team-counsel, .team-grid .grid-item .team-patent {
+.team-grid .grid-item .team-counsel, .team-grid .grid-item .team-patent, .team-grid .grid-item .team-technical {
   height: 100%;
   z-index: 1;
-  background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
-  background-size: 30px auto;
-  background-repeat: no-repeat;
-  background-position: 12px 165px, 50px 163px;
-  /*
-  			&:hover {
-  				background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
-  				background-size: 30px auto;
-  				background-repeat: no-repeat;
-  				background-position: 12px 165px, 50px 163px;
-  			}*/
 }
 .team-grid .grid-item .team-partner .team-name, .team-grid .grid-item .team-associate .team-name,
-.team-grid .grid-item .team-counsel .team-name, .team-grid .grid-item .team-patent .team-name {
+.team-grid .grid-item .team-counsel .team-name, .team-grid .grid-item .team-patent .team-name, .team-grid .grid-item .team-technical .team-name {
   z-index: 2;
   position: absolute;
 }
 .team-grid .grid-item .team-partner .team-image, .team-grid .grid-item .team-associate .team-image,
-.team-grid .grid-item .team-counsel .team-image, .team-grid .grid-item .team-patent .team-image {
+.team-grid .grid-item .team-counsel .team-image, .team-grid .grid-item .team-patent .team-image, .team-grid .grid-item .team-technical .team-image {
   position: relative;
   z-index: -1;
   top: 0;
   width: 100%;
   height: auto;
 }
+.team-grid .icon-overlay {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  margin: 15px 10px;
+}
+.team-grid .icon-overlay img {
+  margin: 0 2.5px;
+  width: 26px;
+  float: left;
+}
 .team-grid .team-partner {
-  background-color: #009ac6;
+  background-color: #008fbe;
 }
 .team-grid .team-associate {
-  background-color: #33afd3;
+  background-color: #00a5ca;
 }
 .team-grid .team-counsel {
-  background-color: #65c3dd;
+  background-color: #44bcd7;
 }
 .team-grid .team-patent {
-  background-color: #8bd2e6;
+  background-color: #7fcce1;
+}
+.team-grid .team-technical {
+  background-color: #9fd8e7;
 }
 .team-grid .team-category {
   background-color: #f7971e;

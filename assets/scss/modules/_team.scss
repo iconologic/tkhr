@@ -72,7 +72,7 @@
 		
 		// Overlay
 		.team-partner, .team-associate,
-		.team-counsel, .team-patent {
+		.team-counsel, .team-patent, .team-technical {
 			height: 100%; 
 			z-index: 1;				
 			// -webkit-transition: all 0.4s ease-in-out;
@@ -80,17 +80,13 @@
 			// -ms-transition: all 0.4s ease-in-out;
 			// -o-transition: all 0.4s ease-in-out;
 			// transition: all 0.4s ease-in-out;
-			background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
-			background-size: 30px auto;
-			background-repeat: no-repeat;
-			background-position: 12px 165px, 50px 163px;
-/*
-			&:hover {
-				background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
-				background-size: 30px auto;
-				background-repeat: no-repeat;
-				background-position: 12px 165px, 50px 163px;
-			}*/
+
+			// &:hover {
+			// 	background-image: url("../images/overlay-electrical-logo.png"), url("../images/overlay-chemistry-logo.png");
+			// 	background-size: 30px auto;
+			// 	background-repeat: no-repeat;
+			// 	background-position: 12px 165px, 50px 163px;
+			// }
 
 			.team-name {
 				z-index: 2;
@@ -106,6 +102,20 @@
 				height: auto;
 
 			}
+		}
+	}
+
+	// Overlay
+	.icon-overlay {
+		position: absolute;
+		bottom: 0;
+		display: block;
+		margin: 15px 10px;
+		
+		img {
+			margin: 0 2.5px;
+			width: 26px;
+			float: left;
 		}
 	}
 
@@ -125,6 +135,10 @@
 
 	.team-patent {
 		background-color: $blue-1;
+	}
+
+	.team-technical {
+		background-color: $blue-0;
 	}
 
 	.team-category {
