@@ -17,25 +17,34 @@ $(document).ready(function() {
 	 });
 
 	 // Append industry images to people grid based on class 
-	 if ( $('.team-partner').hasClass('electrical') ) {
-	 	// console.log('has class electrical');
-	 	$('.icon-overlay').append('<img src="../images/overlay-electrical-logo.png" />')
-	 }
+	 var images = [
+	   'http://thor.iconologic.com/images/overlay-electrical-logo.png',
+	   'http://thor.iconologic.com/images/overlay-bio-logo.png',
+	   'http://thor.iconologic.com/images/overlay-mechanical-logo.png',
+	   'http://thor.iconologic.com/images/overlay-chemistry-logo.png'
+	 ]
 
-	 if ( $('.team-partner').hasClass('bio') ) {
-	 	// console.log('has class bio');
-	 	$('.icon-overlay').append('<img src="../images/overlay-bio-logo.png" />')
-	 }
+	 var classname = [
+	   'electrical',
+	   'bio',
+	   'mechanical',
+	   'chemistry'
+	 ]
 
-	 if ( $('.team-partner').hasClass('mechanical') ) {
-	 	// console.log('has class mechanical');
-	 	$('.icon-overlay').append('<img src="../images/overlay-mechanical-logo.png" />')
-	 }
-
-	 if ( $('.team-partner').hasClass('chemistry') ) {
-	 	// console.log('has class chemistry');
-	 	$('.icon-overlay').append('<img src="../images/overlay-chemistry-logo.png" />')
-	 }
+	 $('.icon-overlay').each(function() {
+	     if ( $(this).hasClass(classname[0]) ) {
+	       $(this).append('<img src="' + images[0] + '" />');
+	     }
+	     if ( $(this).hasClass(classname[1]) ) {
+	       $(this).append('<img src="' + images[1] + '" />');
+	     }
+	     if ( $(this).hasClass(classname[2]) ) {
+	       $(this).append('<img src="' + images[2] + '" />');
+	     }
+	     else {
+	       $(this).append('<img src="' + images[3] + '" />');
+	     }
+	 });
 
 	//Random bg
     var images = [
@@ -50,7 +59,7 @@ $(document).ready(function() {
 
 
 	// Team Grid Hover
-	var transparent = {'background-color': 'rgba(255,255,255,0)'};
+	var transparent = {'background-color': 'rgba(0,71,93,0.6)'};
 	var bgColor;
 
 	function hoverIn(){
